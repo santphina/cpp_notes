@@ -23,5 +23,16 @@ The behavior is undefined, if the input parameter is neither an unsigned char no
 std::transform(str.begin, str.end(),str.begin(),tolower)
 ```
 
+# Floating Points
+
+浮点数，例如double，不能和int比较，也不能和别的浮点数直接比较，因为浮点数并不精确。未定义行为举例：
+
+```c++
+//Undefined Behaviors
+double tc = 0.0;
+if(tc == 0);
+if(tc == 0.0)
+```
+
 
 
